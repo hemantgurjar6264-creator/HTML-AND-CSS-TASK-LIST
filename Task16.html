@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 16</title>
+</head>
+<style>
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .login{
+        width: 350px;
+            padding: 40px;
+            background:transparent;
+            backdrop-filter: blur(10px);
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50px;
+            color: white;
+    }
+    body{
+            height: 100vh;
+            display: flex;
+            justify-content:center ;
+            align-items:center ;
+            font-family: Arial;
+           background: linear-gradient(135deg, blue, brown);
+            
+    }
+    .login h1{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .login input{
+        width: 100%;
+            padding: 17px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+    }
+    .login button{
+        width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            font-size: 19px;
+            cursor: pointer;
+
+    }
+
+ button:hover{
+        background-color: brown;
+    }
+</style>
+<body>
+<div class="login">
+
+        <h1>Login</h1>
+
+        <input type="email" placeholder="Enter Email">
+         <br>
+         <br>
+        <input type="password" placeholder="Enter Password">
+         <br>
+         <br>
+        <button>Login</button>
+
+    </div>
+
+</body>
+</html>

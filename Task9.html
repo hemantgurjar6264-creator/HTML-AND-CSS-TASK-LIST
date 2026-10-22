@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+</head>
+<style>
+    body {
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid black;
+    min-height: 550px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+    h1{
+        text-align: center;
+        position: relative;
+        
+    
+    
+    }
+    .first{
+       text-align: center;
+        font-size: large;
+    }
+    main{
+       margin: 0;
+    padding: 10px;
+}
+    button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+
+    button:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid skyblue;
+}
+
+</style>
+<body>
+    <form>
+    <h1>Event Registration</h1>
+    <p class="first">Register for our upcoming college event</p>
+    <hr>
+    <main>
+        <label for="name">Full Name *</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <br>
+    <br>
+
+        <label for="email">Email Address *</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="example@123" required>
+        <br>
+        <br>
+        <label for="phone">Phone Number *</label>
+        <br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+        <br>
+        <br>
+        <label for="date">Select a Date *</label>
+        <br>
+        <input type="date" id="date" name="date" placeholder="Select a Date" required>
+
+        <br>
+        <br>
+       
+<div class="form-group">
+    <label for="event">Choose Event *</label>
+<br>
+    <select id="event" name="event" required>
+        <option value="" disabled selected>
+         Select an Event </option>
+        <option value="web-development">Web Development Workshop</option>
+        <option value="java-competition">Java Programming Competition</option>
+        <option value="python-challenge">Python Coding Challenge</option>
+        <option value="hackathon">Hackathon</option>
+        <option value="technical-seminar"> Technical Seminar
+        </option>
+    </select>
+</div>
+<br>
+<label for="textarea">Why do you want to join? * </label>
+<br>
+<textarea id="textarea" name="message"
+placeholder="Write a short message..." required></textarea>
+<br>
+<button style="align-items: center;">Submit</button>
+</main>
+</form>
+</body>
+</html>

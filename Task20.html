@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 20</title>
+</head>
+<body>
+    <style>
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .box{
+            background-color: rgb(155, 64, 64);
+            padding: 30px;
+            flex: 1;
+        }
+
+        @media (max-width: 700px){
+
+            .container{
+                flex-direction: column;
+        }
+    }
+    .box:hover{
+        background-color: antiquewhite;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Website</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>HTML</h2>
+            <p>HTML creates structure.</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>CSS designs webpage.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>JavaScript adds interaction.</p>
+        </div>
+
+    </div>
+</body>
+</html>
